@@ -1,1 +1,2 @@
-this repository for upgrade skills
+This repository is for learning web development.
+The branches are depending on days like day1,day2,etc.....
