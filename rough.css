@@ -1,17 +1,77 @@
+body {
+    background: linear-gradient(50deg, #df2990, #7e0bdd);
+    color: #fff;        
+}
+
+a{
+    transition: 0.3s;
+}
+
+a:hover{
+   font-size: 40px;
+   transition: 0.3s;
+}
+
+p{
+    transition: 1s;
+      font-size: 25px;  
+
+}
+
+p:hover{
+  font-size: 40px;  
+  transition: 1s; 
+}
+
 .menu{
-    color: brown;
+    color: rgb(183, 158, 158);
+    transition: 0.3s;
 }
 
 .main_text{
-    color: rgb(109, 34, 184);
-    font-family: Arial, Helvetica, sans-serif;
+    color: maroon;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 47px;
+    font-weight: bold;   
+}
+
+.click_me{
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    background-color: #d4a524;
+    font-size: 20pt;
+    padding: 12px 30px;
+    border-radius: 28pt;
+    box-shadow: 11px 16px 15px black;
+    transition: 0.3s;
+
 
 }
-body {
-    background: linear-gradient(127deg, #df2990, #a503f0);
-    color: #fff;
-  
-  
-  
+
+.click_me:hover{
+   padding: 18px 35px;
+   font-size: 25pt;
+   transition: 0.3s;
+   
+}
+
+.click_me:active{
+    box-shadow: none;
+}
+
+.gallery{
+   display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
     
+   gap: 15px;
+    width: 90%;
+    max-width: 600px;
+
+}
+
+.gallery img{
+        width: 100%;
+
 }
