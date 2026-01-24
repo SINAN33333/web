@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IIT Madras – Sign In</title>
+
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #ffffff;
+      padding: 12px 20px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ===== NOTICE BAR ===== */
+    .notice {
+      background: #2fd0e8;
+      color: white;
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+
+    /* ===== MAIN SECTION ===== */
+    .main {
+      min-height: calc(100vh - 120px);
+      background: linear-gradient(to bottom, #b24a2b, #c66a2d);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      padding: 60px;
+    }
+
+    /* ===== SIGN-IN CARD ===== */
+    .card {
+      background: #ffffff;
+      width: 340px;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* ===== GOOGLE BUTTON ===== */
+    .google-btn {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transition: 0.3s;
+    }
+
+    .google-btn:hover {
+      background: #f5f5f5;
+    }
+
+    .google-btn img {
+      width: 18px;
+    }
+
+    .card small {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .card a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    /* ===== ANNOUNCEMENTS ===== */
+    .announcements {
+      color: white;
+      max-width: 500px;
+    }
+
+    .announcements h1 {
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .announcements ul {
+      list-style: none;
+    }
+
+    .announcements li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .tag {
+      background: #ffffff;
+      color: #b24a2b;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-left: 6px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .main {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div>
+      <h1>IIT Madras</h1>
+      <p>Degree in Data Science and Applications</p>
+    </div>
+  </header>
+
+  <!-- NOTICE BAR -->
+  <div class="notice">
+    You need to sign in
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <!-- LEFT CARD -->
+    <div class="card">
+      <h2>Sign-in</h2>
+      <p>
+        Sign-in using the Google account you registered with to access your
+        application or course dashboard.
+      </p>
+      <p>
+        Registered learners who have been provided with a student email ID,
+        which is Google enabled, should sign-in using their student email ID.
+      </p>
+
+      <div class="google-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google">
+        <span>Sign in with Google</span>
+      </div>
+
+      <small>
+        By continuing, you accept our
+        <a href="#">Terms of Service</a> and
+        <a href="#">Privacy Policy</a>.
+      </small>
+    </div>
+
+    <!-- RIGHT ANNOUNCEMENTS -->
+    <div class="announcements">
+      <h1>Latest Updates / Announcements</h1>
+      <ul>
+        <li>
+          <strong>Quiz Dates for</strong>
+          <span class="tag">Jan 2026 Term</span>
+        </li>
+        <li>Quiz 1: 15 March 2026</li>
+        <li>Quiz 2: 12 April 2026</li>
+        <li>End Term: 10 May 2026</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
