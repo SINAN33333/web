@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="first.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-
-   
+    <title>Amazon Style Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card">
-        <h1>Welcome 👋</h1>
-        <p>This is a simple and beautiful web page made using HTML, CSS, and JavaScript.</p>
-        <button onclick="sayHello()">Click Me</button>
-        <footer>
-            Made with ❤️ by a Web Developer
-        </footer>
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo">amazon<span>.in</span></div>
+
+    <div class="search-box">
+        <select>
+            <option>All</option>
+        </select>
+        <input type="text" placeholder="Search Amazon.in">
+        <button>🔍</button>
     </div>
 
-    <script>
-        function sayHello() {
-            alert("Hello! You clicked the button 😊");
-        }
-    </script>
+    <div class="nav-links">
+        <div>Hello, sign in<br><b>Account & Lists</b></div>
+        <div>Returns<br><b>& Orders</b></div>
+        <div class="cart">🛒 Cart</div>
+    </div>
+</header>
+
+<!-- ===== HERO BANNER ===== -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Shop sarees</h2>
+        <h1>Under ₹399</h1>
+        <p>TOP BRANDS | LATEST TRENDS</p>
+    </div>
+</section>
+
+<!-- ===== CARDS ===== -->
+<section class="cards">
+
+    <div class="card">
+        <h3>Bulk order discounts + Up to 18% GST savings</h3>
+        <div class="grid">
+            <div>
+                <img src="image1.jpg">
+                <p>Up to 45% off | Laptops</p>
+            </div>
+            <div>
+                <img src="image1.jpg">
+                <p>Up to 60% off | Kitchen</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Revamp your home in style</h3>
+        <div class="grid">
+            <div>
+                <img src="image1.jpg">
+                <p>Cushion covers</p>
+            </div>
+            <div>
+                <img src="image1.jpg">
+                <p>Lighting solutions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Appliances for your home | Up to 55% off</h3>
+        <div class="grid">
+            <div>
+                <img src="image1.jpg">
+                <p>Air conditioners</p>
+            </div>
+            <div>
+                <img src="image1.jpg">
+                <p>Refrigerators</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Starting ₹49 | Deals on home essentials</h3>
+        <div class="grid">
+            <div>
+                <img src="image1.jpg">
+                <p>Cleaning supplies</p>
+            </div>
+            <div>
+                <img src="image1.jpg">
+                <p>Home tools</p>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 </body>
 </html>
